@@ -1,4 +1,5 @@
 import React from 'react';
+import {IoReorderThreeOutline} from 'react-icons/io5';
 
 const Sidebar = () => {
     return (
@@ -7,8 +8,9 @@ const Sidebar = () => {
                 <div>
                     <img className='w-40' src="https://i.imgur.com/zqpwkLQ.png" alt="" />
                 </div>
-                <div>
-                    
+                <div className='flex items-center cursor-pointer'>
+                    <IoReorderThreeOutline />
+                    <p className='ml-5'>More</p>
                 </div>
             </div>
         </div>
