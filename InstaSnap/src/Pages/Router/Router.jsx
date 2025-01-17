@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import HomePage from "../HomePage/HomePage";
+import Profile from "../Profile/Profile";
 
 const Router = () => { 
     return (
@@ -12,11 +13,9 @@ const Router = () => {
                 </div>
                 <div>
                     <Routes>
-                        <Route path = "/" element = {<HomePage />} />
-                        {/* <Route path = "/explore" element = {<Explore />} />
-                        <Route path = "/notifications" element = {<Notifications />} />
-                        <Route path = "/messages" element = {<Messages />} />
-                        <Route path = "/profile" element = {<Profile />} /> */}
+                        <Route path = "/" element = {<HomePage />}></Route>
+                        <Route path = "/username" element = {<Profile />}></Route>
+                        
                     </Routes>
                 </div>
             </div>
