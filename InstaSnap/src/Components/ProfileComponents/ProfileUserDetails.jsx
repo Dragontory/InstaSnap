@@ -15,6 +15,22 @@ export const ProfileUserDetails = () => {
                         <button>Edit Profile</button>
                         <TbCircleDashed></TbCircleDashed>
                     </div>
+                    <div className="flex space-x-10">
+                        <div>
+                            <span>10</span>
+                            <span>posts</span>
+                        </div>
+
+                        <div>
+                            <span>5</span>
+                            <span>follower</span>
+                        </div>
+
+                        <div>
+                            <span>7</span>
+                            <span>following</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
