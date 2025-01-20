@@ -17,19 +17,23 @@ export const ProfileUserDetails = () => {
                     </div>
                     <div className="flex space-x-10">
                         <div>
-                            <span>10</span>
+                            <span className="font-semibold mr-2">10</span>
                             <span>posts</span>
                         </div>
 
                         <div>
-                            <span>5</span>
+                            <span className="font-semibold mr-2">5</span>
                             <span>follower</span>
                         </div>
 
                         <div>
-                            <span>7</span>
+                            <span className="font-semibold mr-2">7</span>
                             <span>following</span>
                         </div>
+                    </div>
+                    <div>
+                        <p className="font-semibold">Full Name</p>
+                        <p className="font-thin text-sm">Cool Dude | OSU2026</p>
                     </div>
                 </div>
             </div>
