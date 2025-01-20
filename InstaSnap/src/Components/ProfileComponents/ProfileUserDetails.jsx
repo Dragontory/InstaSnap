@@ -9,7 +9,7 @@ export const ProfileUserDetails = () => {
                     <img className="w-32 h-32 rounded-full" src="https://cdn.pixabay.com/photo/2025/01/03/06/55/cortina-dampezzo-9307295_1280.jpg" alt="" />
                 </div>
 
-                <div>
+                <div className="space-y-5">
                     <div className="flex space-x-10 items-center">
                         <p>username</p>
                         <button>Edit Profile</button>
