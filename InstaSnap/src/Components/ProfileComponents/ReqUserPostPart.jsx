@@ -25,7 +25,7 @@ const ReqUserPostPart = () => {
     ]
     return (
         <div>
-            <div>
+            <div className="flex space-x-14 border-t relative">
                 {tabs.map((item)=>
                     <div className="flex items-center cursor-pointer py-2 text-sm">
                         <p>{item.icon}</p>
