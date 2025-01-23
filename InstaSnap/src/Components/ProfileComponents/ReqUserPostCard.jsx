@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
+import "./ReqUserPostCard.css";
 
 const ReqUserPostCard = () => {
     return ( 
