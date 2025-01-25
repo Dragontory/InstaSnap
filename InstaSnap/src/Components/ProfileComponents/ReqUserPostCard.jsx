@@ -5,7 +5,7 @@ import "./ReqUserPostCard.css";
 
 const ReqUserPostCard = () => {
     return ( 
-        <div>
+        <div className="p-2">
             <div className="post w-60 h-60">
                 <img className="cursor-pointer" src="https://cdn.pixabay.com/photo/2022/01/29/07/12/chinese-lion-6976588_1280.png" alt="" />
                 <div className="overlay">
