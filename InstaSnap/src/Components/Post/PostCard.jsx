@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeRight = () => {
+const PostCard = () => {
     return (
         <div>
             <div>
@@ -19,4 +19,4 @@ const HomeRight = () => {
     )
 }
 
-export default HomeRight;
+export default PostCard;
