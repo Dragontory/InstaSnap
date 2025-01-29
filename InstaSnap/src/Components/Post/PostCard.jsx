@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {BsThreeDots} from "react-icons/bs";
+import "./PostCard.css";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -19,12 +20,16 @@ const PostCard = () => {
                             <p className="font-thin text-sm">location</p>
                         </div>
                     </div>
-                    <div>
-                        <BsThreeDots onClick={handleClick}/>
+                    <div className="dropdown">
+                        <BsThreeDots className="dots" onClick={handleClick}/>
                         <div className="dropdown-content">
                             {showDropdown && <p className="bg-black text-white py-1 px-4 rounded-md cursor-pointer">Delete</p>}
                         </div>
                     </div>
+                </div>
+
+                <div className="w-full">
+                    <img className="w-full" src="https://cdn.pixabay.com/photo/2024/08/15/19/19/highland-cow-8972000_1280.jpg" alt="" />
                 </div>
             </div>
         </div>
