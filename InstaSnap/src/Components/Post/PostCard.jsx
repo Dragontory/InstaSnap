@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {BsThreeDots} from "react-icons/bs";
 import "./PostCard.css";
+import { AiFillAlert, AiOutlineHeart } from "react-icons/ai";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -30,6 +31,13 @@ const PostCard = () => {
 
                 <div className="w-full">
                     <img className="w-full" src="https://cdn.pixabay.com/photo/2024/08/15/19/19/highland-cow-8972000_1280.jpg" alt="" />
+                </div>
+
+                <div>
+                    <div>
+                        <AiFillAlert />
+                        <AiOutlineHeart />
+                    </div>
                 </div>
             </div>
         </div>
