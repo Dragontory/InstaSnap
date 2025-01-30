@@ -1,10 +1,17 @@
 import React, {useState} from "react";
-import {BsThreeDots} from "react-icons/bs";
+import {BsBookmark, BsBookmarkFill, BsThreeDots} from "react-icons/bs";
 import "./PostCard.css";
 import { AiFillAlert, AiOutlineHeart } from "react-icons/ai";
+import { FaRegComment } from "react-icons/fa";
+import { RiSendPlaneLine } from "react-icons/ri";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
+    const [isPostLiked, setIsPostLiked] = useState(false);
+
+    const handlePostLike = () => {
+        setIsPostLiked(!isPostLiked);
+    }
     const handleClick = () => {
         setShowDropdown(!showDropdown);
     }
@@ -35,8 +42,14 @@ const PostCard = () => {
 
                 <div>
                     <div>
-                        <AiFillAlert />
-                        <AiOutlineHeart />
+                        {isPostLiked? <AiFillAlert className="text-xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} /> : <AiOutlineHeart className="text-xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
+                        
+                        <FaRegComment className="text-xl hover:opacity-50 cursor-pointer" />
+                        <RiSendPlaneLine className="text-xl hover:opacity-50 cursor-pointer" />
+                    </div>
+                    <div>
+                        <BsBookmarkFill />
+                        <BsBookmark />
                     </div>
                 </div>
             </div>
