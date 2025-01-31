@@ -4,6 +4,7 @@ import "./PostCard.css";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { RiSendPlaneLine } from "react-icons/ri";
+import { BsEmojiSmile } from "react-icons/bs";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -62,6 +63,13 @@ const PostCard = () => {
                 <div className="w-full py-2 px-5">
                     <p>10 likes</p>
                     <p className="opacity-50 py-2 cursor-pointer">view all 10 comments</p>
+                </div>
+
+                <div className="border border-t w-full">
+                    <div className="flex items-center w-full px-5">
+                        <BsEmojiSmile />
+                        <input type="text" placeholder="Add a comment..." className="commentInput" />
+                    </div>
                 </div>
             </div>
         </div>
