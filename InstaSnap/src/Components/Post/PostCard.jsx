@@ -5,6 +5,7 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { RiSendPlaneLine } from "react-icons/ri";
 import { BsEmojiSmile } from "react-icons/bs";
+import CommentModal from "../Comment/CommentModal";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -72,6 +73,8 @@ const PostCard = () => {
                     </div>
                 </div>
             </div>
+
+            <CommentModal />
         </div>
     )
 }

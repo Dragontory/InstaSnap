@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody } from "@chakra-ui/react";
 
 const CommentModal = ({onClose, isOpen}) => {
     return (
