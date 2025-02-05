@@ -16,17 +16,19 @@ const CommentModal = ({onClose, isOpen}) => {
                                 <img className="max-h-full w-full" src="https://cdn.pixabay.com/photo/2024/10/15/17/16/swan-9122726_1280.jpg" alt="" />
                             </div>
                             <div className="border w-[55%]">
-                                <div className="flex items-center">
-                                    <div>
-                                        <img className="w-9 h-9 rounded-full" src="https://cdn.pixabay.com/photo/2023/12/16/04/29/arch-8451821_1280.jpg" alt="" />
+                                <div className="flex justify-between items-center py-5">    
+                                    <div className="flex items-center">
+                                        <div>
+                                            <img className="w-9 h-9 rounded-full" src="https://cdn.pixabay.com/photo/2023/12/16/04/29/arch-8451821_1280.jpg" alt="" />
+                                        </div>
+                                        <div className="ml-2">
+                                            <p>username</p>
+                                        </div>
+                                        
                                     </div>
-                                    <div className="ml-2">
-                                        <p>username</p>
-                                    </div>
-                                    
-                                </div>
 
-                                <BsThreeDots />
+                                    <BsThreeDots />
+                                </div>
 
                             </div>
                         </div>
