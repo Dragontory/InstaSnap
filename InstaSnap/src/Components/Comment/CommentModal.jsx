@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody } from "@chakra-ui/react";
+import { BsThreeDots } from "react-icons/bs";
 
 const CommentModal = ({onClose, isOpen}) => {
     return (
@@ -19,8 +20,13 @@ const CommentModal = ({onClose, isOpen}) => {
                                     <div>
                                         <img className="w-9 h-9 rounded-full" src="https://cdn.pixabay.com/photo/2023/12/16/04/29/arch-8451821_1280.jpg" alt="" />
                                     </div>
+                                    <div className="ml-2">
+                                        <p>username</p>
+                                    </div>
                                     
                                 </div>
+
+                                <BsThreeDots />
 
                             </div>
                         </div>
