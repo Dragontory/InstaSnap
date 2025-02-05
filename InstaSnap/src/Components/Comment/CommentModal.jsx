@@ -15,7 +15,7 @@ const CommentModal = ({onClose, isOpen}) => {
                             <div className="w-[45%] flex flex-col justify-center">
                                 <img className="max-h-full w-full" src="https://cdn.pixabay.com/photo/2024/10/15/17/16/swan-9122726_1280.jpg" alt="" />
                             </div>
-                            <div className="border w-[55%]">
+                            <div className="w-[55%] pl-10">
                                 <div className="flex justify-between items-center py-5">    
                                     <div className="flex items-center">
                                         <div>
