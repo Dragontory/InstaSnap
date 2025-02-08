@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody } from "@chakra-ui/react";
 import { BsThreeDots } from "react-icons/bs";
+import CommentCard from "./CommentCard";
 
 const CommentModal = ({onClose, isOpen}) => {
     return (
@@ -28,6 +29,10 @@ const CommentModal = ({onClose, isOpen}) => {
                                     </div>
 
                                     <BsThreeDots />
+                                </div>
+                                <hr />
+                                <div>
+                                    {[1,1,1,1,1].map(() => <CommentCard />)}
                                 </div>
 
                             </div>
