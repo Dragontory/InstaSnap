@@ -6,6 +6,7 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { RiSendPlaneLine } from "react-icons/ri";
 import { BsBookmark, BsBookmarkFill } from "react-icons/bs";
+import { useState } from "react";
 
 const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, handleSavePost}) => {
     return (
@@ -36,10 +37,10 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                                 </div>
                                 <hr />
                                 <div>
-                                    {[1,1,1,1,1].map(() => <CommentCard />)}
+                                    {[1,1,1,1].map(() => <CommentCard />)}
                                 </div>
 
-                                <div className="flex justify-between items-center w-full py-4 px-5">
+                                <div className="flex justify-between items-center w-full py-4">
                                     <div className="flex items-center space-x-2">
                                         {isPostLiked? <AiFillHeart className="text-2xl hover:opacity-50 cursor-pointer text-red-600" onClick={handlePostLike} /> : <AiOutlineHeart className="text-2xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
                                                         
@@ -50,6 +51,11 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                                         {isSaved? <BsBookmarkFill className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} /> : <BsBookmark className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} />}
                                 
                                     </div>
+                                </div>
+
+                                <div className="w-full py-2">
+                                    <p>1000 likes</p>
+                                    <p className="opacity-50 text-sm">5 days ago</p>
                                 </div>
 
                             </div>
