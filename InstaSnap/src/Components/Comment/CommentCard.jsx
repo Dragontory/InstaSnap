@@ -10,7 +10,7 @@ const CommentCard = () => {
 
     return (
         <div>
-            <div>
+            <div className="flex items-center justify-between py-5">
                 <div className="flex items-center">
                     <div>
                         <img className="w-9 h-9 rounded-full" src="https://cdn.pixabay.com/photo/2024/12/30/17/00/landscape-9300672_1280.jpg" alt="" />
