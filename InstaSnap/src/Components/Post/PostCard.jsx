@@ -6,11 +6,13 @@ import { FaRegComment } from "react-icons/fa";
 import { RiSendPlaneLine } from "react-icons/ri";
 import { BsEmojiSmile } from "react-icons/bs";
 import CommentModal from "../Comment/CommentModal";
+import { useDisclosure } from "@chakra-ui/react";
 
 const PostCard = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [isPostLiked, setIsPostLiked] = useState(false);
     const [isSaved, setIsSaved] = useState(false);
+    const [isOpen, onOpen, onClose] = useDisclosure();
 
     const handleSavePost = () => {
         setIsSaved(!isSaved);

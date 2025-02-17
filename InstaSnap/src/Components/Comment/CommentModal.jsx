@@ -18,11 +18,11 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                     
 
                     <ModalBody>
-                        <div className="h-[75vh] flex relative">
+                        <div className="h-[75vh] flex">
                             <div className="w-[45%] flex flex-col justify-center">
                                 <img className="max-h-full w-full" src="https://cdn.pixabay.com/photo/2024/10/15/17/16/swan-9122726_1280.jpg" alt="" />
                             </div>
-                            <div className="w-[55%] pl-10">
+                            <div className="w-[55%] pl-10 relative">
                                 <div className="flex justify-between items-center py-5">    
                                     <div className="flex items-center">
                                         <div>
@@ -38,10 +38,10 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                                 </div>
                                 <hr />
                                 <div className="comment">
-                                    {[1,1,1,1].map(() => <CommentCard />)}
+                                    {[1,1,1].map(() => <CommentCard />)}
                                 </div>
 
-                                <div className="absolute bottom-0">
+                                <div className="absolute bottom-0 w-[90%]">     
                                     <div className="flex justify-between items-center w-full py-4">
                                         <div className="flex items-center space-x-2">
                                             {isPostLiked? <AiFillHeart className="text-2xl hover:opacity-50 cursor-pointer text-red-600" onClick={handlePostLike} /> : <AiOutlineHeart className="text-2xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
