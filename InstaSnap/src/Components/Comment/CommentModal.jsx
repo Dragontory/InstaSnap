@@ -18,7 +18,7 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                     
 
                     <ModalBody>
-                        <div className="h-[75vh] flex">
+                        <div className="h-[75vh] flex relative">
                             <div className="w-[45%] flex flex-col justify-center">
                                 <img className="max-h-full w-full" src="https://cdn.pixabay.com/photo/2024/10/15/17/16/swan-9122726_1280.jpg" alt="" />
                             </div>
@@ -41,29 +41,30 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                                     {[1,1,1,1].map(() => <CommentCard />)}
                                 </div>
 
-                                <div className="flex justify-between items-center w-full py-4">
-                                    <div className="flex items-center space-x-2">
-                                        {isPostLiked? <AiFillHeart className="text-2xl hover:opacity-50 cursor-pointer text-red-600" onClick={handlePostLike} /> : <AiOutlineHeart className="text-2xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
-                                                        
-                                        <FaRegComment className="text-xl hover:opacity-50 cursor-pointer" />
-                                        <RiSendPlaneLine className="text-xl hover:opacity-50 cursor-pointer" />
+                                <div className="absolute bottom-0">
+                                    <div className="flex justify-between items-center w-full py-4">
+                                        <div className="flex items-center space-x-2">
+                                            {isPostLiked? <AiFillHeart className="text-2xl hover:opacity-50 cursor-pointer text-red-600" onClick={handlePostLike} /> : <AiOutlineHeart className="text-2xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
+                                                            
+                                            <FaRegComment className="text-xl hover:opacity-50 cursor-pointer" />
+                                            <RiSendPlaneLine className="text-xl hover:opacity-50 cursor-pointer" />
+                                        </div>
+                                        <div className="cursor-pointer">
+                                            {isSaved? <BsBookmarkFill className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} /> : <BsBookmark className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} />}
+                                    
+                                        </div>
                                     </div>
-                                    <div className="cursor-pointer">
-                                        {isSaved? <BsBookmarkFill className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} /> : <BsBookmark className="text-xl hover:opacity-50 cursor-pointer" onClick={handleSavePost} />}
-                                
+
+                                    <div className="w-full py-2">
+                                        <p>1000 likes</p>
+                                        <p className="opacity-50 text-sm">5 days ago</p>
                                     </div>
-                                </div>
 
-                                <div className="w-full py-2">
-                                    <p>1000 likes</p>
-                                    <p className="opacity-50 text-sm">5 days ago</p>
-                                </div>
-
-                                <div className="border border-t w-full">
-                                    <div className="flex items-center w-full px-5">
+                                    <div className="flex items-center w-full">
                                         <BsEmojiSmile />
-                                        <input type="text" placeholder="Add a comment..." className="commentInput" />
+                                        <input type="text" placeholder="Add a comment..." className="commentInputs" />
                                     </div>
+                                    
                                 </div>
 
                             </div>
