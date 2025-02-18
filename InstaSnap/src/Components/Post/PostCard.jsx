@@ -26,6 +26,10 @@ const PostCard = () => {
         setShowDropdown(!showDropdown);
     }
 
+    const handleOpenCommentModal = () => {
+        onOpen();
+    }
+
     return (
         <div>
             <div className="border rounded-md w-full">
@@ -54,7 +58,7 @@ const PostCard = () => {
                     <div className="flex items-center space-x-2">
                         {isPostLiked? <AiFillHeart className="text-2xl hover:opacity-50 cursor-pointer text-red-600" onClick={handlePostLike} /> : <AiOutlineHeart className="text-2xl hover:opacity-50 cursor-pointer" onClick={handlePostLike} />}
                         
-                        <FaRegComment className="text-xl hover:opacity-50 cursor-pointer" />
+                        <FaRegComment onClick={handleOpenCommentModal} className="text-xl hover:opacity-50 cursor-pointer" />
                         <RiSendPlaneLine className="text-xl hover:opacity-50 cursor-pointer" />
                     </div>
                     <div className="cursor-pointer">
@@ -76,7 +80,7 @@ const PostCard = () => {
                 </div>
             </div>
 
-            <CommentModal />
+            <CommentModal handlePostLike={handlePostLike} onClose={onClose} isOpen={isOpen} handleSavePost={handleSavePost} isPostLiked={isPostLiked} isSaved={isSaved}/>
         </div>
     )
 }
