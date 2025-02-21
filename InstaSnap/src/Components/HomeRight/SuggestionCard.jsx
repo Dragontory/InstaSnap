@@ -10,6 +10,7 @@ const SuggestionCard = () => {
                     <p className="text-sm font-semibold opacity-70m">Follows you</p>
                 </div>
             </div>
+            <p>Follow</p>
         </div>
     )
 }
