@@ -9,9 +9,9 @@ const HomeRight = () => {
                         <div>
                             <img className="w-12 h-12 rounded-full" src="https://cdn.pixabay.com/photo/2024/08/26/23/38/maranhao-sheets-9000410_1280.jpg" alt="" />
                         </div>
-                        <div>
+                        <div className="ml-3">
                             <p>Full Name</p>
-                            <p>username</p>
+                            <p className="opacity-70">username</p>
                         </div>
                     </div>
                 </div>
