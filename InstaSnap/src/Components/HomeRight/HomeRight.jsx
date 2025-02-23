@@ -5,7 +5,7 @@ const HomeRight = () => {
     return (
         <div className="">
             <div>
-                <div>
+                <div className="flex justify-between items-center">
                     <div className="flex items-center">
                         <div>
                             <img className="w-12 h-12 rounded-full" src="https://cdn.pixabay.com/photo/2024/08/26/23/38/maranhao-sheets-9000410_1280.jpg" alt="" />
@@ -16,7 +16,7 @@ const HomeRight = () => {
                         </div>
                     </div>
                     <div>
-                        <p>switch</p>
+                        <p className="text-blue-700 font-semibold">switch</p>
                     </div>
                     
                 </div>
