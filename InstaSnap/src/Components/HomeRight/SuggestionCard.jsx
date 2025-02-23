@@ -8,7 +8,7 @@ const SuggestionCard = () => {
                 <div className="ml-2">
                     <p className="text-sm font-semibold">username</p>
                     <p className="text-sm font-semibold opacity-70m">Follows you</p>
-                </div>
+                </div> 
             </div>
             <p className="text-blue-700 text-sm font-semibold">Follow</p>
         </div>
