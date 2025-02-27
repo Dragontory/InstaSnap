@@ -8,7 +8,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
             <Modal size={"4xl"} onClick={onClose} isOpen={true} isCentered>
                 <ModalOverlay />
                 <ModalContent>
-                    <div>
+                    <div className="flex justify-between py-1 px-10 items-center">
                         <p>Create New Post</p>
                         <Button className="" variant={"ghost"} size="sm" colorScheme={"blue"}>
                             Share
