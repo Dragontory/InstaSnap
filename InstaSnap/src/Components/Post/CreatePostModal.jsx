@@ -4,7 +4,7 @@ import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalB
 const CreatePostModal = ({onClose, isOpen}) => {
     return (
         <div>
-            <Modal onClick={onClose} isOpen={isOpen}>
+            <Modal onClick={onClose} isOpen={true} isCentered>
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader>Modal Title</ModalHeader>
@@ -19,3 +19,5 @@ const CreatePostModal = ({onClose, isOpen}) => {
         </div>
     );
 };
+
+export default CreatePostModal;

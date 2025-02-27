@@ -2,6 +2,7 @@ import React from "react";
 import StoryCircle from "../../Components/Story/StoryCircle";
 import HomeRight from "../../Components/HomeRight/HomeRight";
 import PostCard from "../../Components/Post/PostCard";
+import CreatePostModal from "../../Components/Post/CreatePostModal";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,8 @@ const HomePage = () => {
           <HomeRight />
         </div>
       </div>
+
+      <CreatePostModal />
     </div>
   )
 }
