@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody} from "@chakra-ui/react";
 import {Button} from "@chakra-ui/react";
 import {FaPhotoVideo} from "react-icons/fa";
+import "./CreatePostModal.css";
 
 const CreatePostModal = ({onClose, isOpen}) => {
     return (
