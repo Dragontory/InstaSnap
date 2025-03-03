@@ -5,6 +5,28 @@ import {FaPhotoVideo} from "react-icons/fa";
 import "./CreatePostModal.css";
 
 const CreatePostModal = ({onClose, isOpen}) => {
+
+    const [isDragOver, setIsDragOver] = useState(false);
+    const [file, setFile] = useState();
+
+    const handleDrop = (event) => {
+        event.preventDefault();
+        const file = event.dataTransfer.files[0];
+        if(file.type.startsWith("image/") || file.type.startsWith("video/")) {
+            setFile(file);
+        }
+    }
+
+    const handleDragOver = (event) => {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "copy";
+        setIsDragOver(true);
+    }
+
+    const handleDragLeave = (event) => {
+        setIsDragOver(false);
+    }
+
     return (
         <div>
             <Modal size={"4xl"} onClick={onClose} isOpen={true} isCentered>
