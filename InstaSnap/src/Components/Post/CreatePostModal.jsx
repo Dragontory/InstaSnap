@@ -19,9 +19,9 @@ const CreatePostModal = ({onClose, isOpen}) => {
                     <ModalBody>
                         <div>
                             <div>
-                                <div>
+                                <div onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave} className="drag-drop h-full">
                                     <div>
-                                        <FaPhotoVideo />
+                                        <FaPhotoVideo className="text-3xl"/>
                                         <p>Drag Photos or Videos Here</p>
                                     </div>
                                 </div>
