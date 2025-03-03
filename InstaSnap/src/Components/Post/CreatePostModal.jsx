@@ -1,6 +1,7 @@
 import React from "react";
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody} from "@chakra-ui/react";
 import {Button} from "@chakra-ui/react";
+import {FaPhotoVideo} from "react-icons/fa";
 
 const CreatePostModal = ({onClose, isOpen}) => {
     return (
@@ -14,9 +15,18 @@ const CreatePostModal = ({onClose, isOpen}) => {
                             Share
                         </Button>
                     </div>
-                    <ModalCloseButton />
+                    <hr />
                     <ModalBody>
-
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <FaPhotoVideo />
+                                        <p>Drag Photos or Videos Here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </ModalBody>
 
