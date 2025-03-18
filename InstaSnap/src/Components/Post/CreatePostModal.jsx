@@ -29,7 +29,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
 
     const handleOnChange = (event) => {
         const file = event.target.files[0];
-        if(file && file.type.startsWith("image/") || file.type.startsWith("video/")) {
+        if(file && (file.type.startsWith("image/") || file.type.startsWith("video/"))) {
             setFile(file);
         } else {
             setFile(null);
