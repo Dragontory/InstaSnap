@@ -13,3 +13,21 @@
 .drag-drop p{
     margin:0 0 1rem;
 }
+
+.custom-file-upload {
+    padding: .5rem 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #2684f0;
+    border-color: #2684f0;
+}
+
+input[type = "file"] {
+    display:none;
+}
