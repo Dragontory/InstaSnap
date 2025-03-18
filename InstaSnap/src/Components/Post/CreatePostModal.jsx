@@ -47,6 +47,8 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                         <FaPhotoVideo className="text-3xl"/>
                                         <p>Drag Photos or Videos Here</p>
                                     </div>
+                                    <label htmlFor="file-upload" className="custom-file-upload">Select From Computer</label>
+                                    <input type="text" id="file-upload" accept="image/*, video/*" onChange={handleOnChange} />
                                 </div>
                             </div>
                         </div>
