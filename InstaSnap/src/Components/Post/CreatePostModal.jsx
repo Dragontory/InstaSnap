@@ -50,7 +50,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                     </div>
                     <hr />
                     <ModalBody>
-                        <div className="h-[70vh] justify-between pb-5">
+                        <div className="h-[70vh] justify-between pb-5 flex">
                             <div className="w-[50%]">
                                 {!file && <div onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave} className="drag-drop h-full">
                                     <div>
@@ -62,6 +62,14 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                 </div>}
 
                                 {file && <img className="max-h-full" src={URL.createObjectURL(file)} alt="" />}
+
+                                <div className="w-[1px] border-2 h-full">Instagram</div>
+                                <div className="w-[50%]">
+                                    <div>
+                                        <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
