@@ -50,7 +50,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                     </div>
                     <hr />
                     <ModalBody>
-                        <div>
+                        <div className="h-[70vh] justify-between pb-5">
                             <div className="w-[50%]">
                                 {!file && <div onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave} className="drag-drop h-full">
                                     <div>
@@ -61,7 +61,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <input className = "fileInput" type="file" id="file-upload" accept="image/*, video/*" onChange={handleOnChange} />
                                 </div>}
 
-                                {file && <img src={URL.createObjectURL(file)} alt="" />}
+                                {file && <img className="max-h-full" src={URL.createObjectURL(file)} alt="" />}
                             </div>
                         </div>
 
