@@ -66,7 +66,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                             </div>
                             <div className="w-[1px] border-2 h-full">Instagram</div>
                             <div className="w-[50%]">
-                                <div>
+                                <div className="flex items-center px-2">
                                     <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
                                     <p className="font-semibold ml-4">username</p>
                                 </div>
