@@ -63,13 +63,13 @@ const CreatePostModal = ({onClose, isOpen}) => {
 
                                 {file && <img className="max-h-full" src={URL.createObjectURL(file)} alt="" />}
 
-                                <div className="w-[1px] border-2 h-full">Instagram</div>
-                                <div className="w-[50%]">
-                                    <div>
-                                        <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
-                                    </div>
+                            </div>
+                            <div className="w-[1px] border-2 h-full">Instagram</div>
+                            <div className="w-[50%]">
+                                <div>
+                                    <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
+                                    <p className="font-semibold ml-4">username</p>
                                 </div>
-
                             </div>
                         </div>
 
