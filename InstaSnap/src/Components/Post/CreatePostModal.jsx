@@ -70,6 +70,9 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
                                     <p className="font-semibold ml-4">username</p>
                                 </div>
+                                <div>
+                                    <textarea className="captionInput" name="caption" rows="8"></textarea>
+                                </div>
                             </div>
                         </div>
 
