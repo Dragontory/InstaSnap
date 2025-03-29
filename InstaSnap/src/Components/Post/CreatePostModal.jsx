@@ -71,7 +71,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <p className="font-semibold ml-4">username</p>
                                 </div>
                                 <div>
-                                    <textarea className="captionInput" name="caption" rows="8"></textarea>
+                                    <textarea placeholder="Write a caption" className="captionInput" name="caption" rows="8"></textarea>
                                 </div>
                             </div>
                         </div>
