@@ -8,6 +8,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
 
     const [isDragOver, setIsDragOver] = useState(false);
     const [file, setFile] = useState();
+    const [caption, setCaption] = useState("");
 
     const handleDrop = (event) => {
         event.preventDefault();
@@ -35,6 +36,10 @@ const CreatePostModal = ({onClose, isOpen}) => {
             setFile(null);
             alert("Please select an image or video file");
         }
+    }
+
+    const handleCaptionChange = (event) => {
+        setCaption(event.target.value)
     }
 
     return (
@@ -71,7 +76,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <p className="font-semibold ml-4">username</p>
                                 </div>
                                 <div>
-                                    <textarea placeholder="Write a caption" className="captionInput" name="caption" rows="8"></textarea>
+                                    <textarea placeholder="Write a caption" className="captionInput" name="caption" rows="8" onChange={handleCaptionChange}></textarea>
                                 </div>
                             </div>
                         </div>
