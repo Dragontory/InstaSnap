@@ -3,6 +3,7 @@ import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalB
 import {Button} from "@chakra-ui/react";
 import {FaPhotoVideo} from "react-icons/fa";
 import "./CreatePostModal.css";
+import {GrEmoji} from "react-icons/gr";
 
 const CreatePostModal = ({onClose, isOpen}) => {
 
@@ -75,9 +76,15 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
                                     <p className="font-semibold ml-4">username</p>
                                 </div>
-                                <div>
+                                <div className="px-2">
                                     <textarea placeholder="Write a caption" className="captionInput" name="caption" rows="8" onChange={handleCaptionChange}></textarea>
                                 </div>
+
+                                <div>
+                                    <GrEmoji />
+                                    <p>{caption?.length} /2,200</p>
+                                </div>
+
                             </div>
                         </div>
 
