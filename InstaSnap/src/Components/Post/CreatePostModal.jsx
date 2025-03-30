@@ -80,9 +80,9 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <textarea placeholder="Write a caption" className="captionInput" name="caption" rows="8" onChange={handleCaptionChange}></textarea>
                                 </div>
 
-                                <div>
+                                <div className="flex justify-between items-center px-2">
                                     <GrEmoji />
-                                    <p>{caption?.length} /2,200</p>
+                                    <p className="opacity-70">{caption?.length} /2,200</p>
                                 </div>
 
                             </div>
