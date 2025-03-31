@@ -4,6 +4,7 @@ import {Button} from "@chakra-ui/react";
 import {FaPhotoVideo} from "react-icons/fa";
 import "./CreatePostModal.css";
 import {GrEmoji} from "react-icons/gr";
+import {GoLocation} from "react-icons/go";
 
 const CreatePostModal = ({onClose, isOpen}) => {
 
@@ -70,7 +71,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                 {file && <img className="max-h-full" src={URL.createObjectURL(file)} alt="" />}
 
                             </div>
-                            <div className="w-[1px] border-2 h-full"></div>
+                            <div className="w-[1px] border h-full"></div>
                             <div className="w-[50%]">
                                 <div className="flex items-center px-2">
                                     <img className="w-7 h-7 rounded-full" src="https://cdn.pixabay.com/photo/2022/10/11/16/43/french-bulldog-7514725_1280.jpg" alt="" />
@@ -87,7 +88,9 @@ const CreatePostModal = ({onClose, isOpen}) => {
 
                                 <div className="p-2 justify-between items-center">
                                     <input className="locationInput" type="text" placeholder="location" name="location" />
+                                    <GoLocation />
                                 </div>
+                                <hr />
 
                             </div>
                         </div>
