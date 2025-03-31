@@ -85,6 +85,10 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <p className="opacity-70">{caption?.length} /2,200</p>
                                 </div>
 
+                                <div>
+                                    <input className="locationInput" type="text" placeholder="location" name="location" />
+                                </div>
+
                             </div>
                         </div>
 
