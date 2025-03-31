@@ -85,7 +85,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
                                     <p className="opacity-70">{caption?.length} /2,200</p>
                                 </div>
 
-                                <div>
+                                <div className="p-2 justify-between items-center">
                                     <input className="locationInput" type="text" placeholder="location" name="location" />
                                 </div>
 
