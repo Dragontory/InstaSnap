@@ -2,11 +2,14 @@ import React from "react";
 import {IoReorderThreeOutline} from "react-icons/io5";
 import { mainu } from "./SidebarConfig";
 import { useNavigate } from "react-router-dom";
+import CreatePostModal from "../Post/CreatePostModal";
+import { useDisclosure } from "@chakra-ui/react";
 
 const Sidebar = () => {
 
 const [activeTab, setActiveTab] = React.useState();
 const navigate = useNavigate();
+const {isOpen, onOpen, onClose} = useDisclosure();
 
     const handleTabClick = (title) => {
         setActiveTab(title);
@@ -38,6 +41,8 @@ const navigate = useNavigate();
                     <p className="ml-5">More</p>
                 </div>
             </div>
+
+            <CreatePostModal onclose={onClose} isOpen={isOpen} />
         </div>
     )
 }
