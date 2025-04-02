@@ -46,7 +46,7 @@ const CreatePostModal = ({onClose, isOpen}) => {
 
     return (
         <div>
-            <Modal size={"4xl"} onClick={onClose} isOpen={isOpen} isCentered>
+            <Modal size={"4xl"} onClose={onClose} isOpen={isOpen} isCentered>
                 <ModalOverlay />
                 <ModalContent>
                     <div className="flex justify-between py-1 px-10 items-center">

@@ -9,7 +9,7 @@ const Sidebar = () => {
 
 const [activeTab, setActiveTab] = React.useState();
 const navigate = useNavigate();
-const {isOpen, onOpen, onClose} = useDisclosure();
+const {isOpen, onClose, onOpen} = useDisclosure();
 
     const handleTabClick = (title) => {
         setActiveTab(title);
@@ -17,6 +17,8 @@ const {isOpen, onOpen, onClose} = useDisclosure();
             navigate("/username");
         } else if(title==="Home") {
             navigate("/");
+        } else if(title==="Create") {
+            onOpen();
         }
     }
 
@@ -42,7 +44,7 @@ const {isOpen, onOpen, onClose} = useDisclosure();
                 </div>
             </div>
 
-            <CreatePostModal onclose={onClose} isOpen={isOpen} />
+            <CreatePostModal onClose={onClose} isOpen={isOpen} />
         </div>
     )
 }
