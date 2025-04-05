@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 const StoryViewerContainer = styled.div`
@@ -13,11 +13,14 @@ const StoryImage = styled.img`
     object-fit: contain;
 `
 
-const StoryViewer = () => {
+const StoryViewer = ({stories}) => {
+    const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
         <div>
             <StoryViewerContainer>
-                <StoryImage/>
+                <StoryImage src={stories?.[currentStoryIndex].image}/>
             </StoryViewerContainer>
         </div>
     )
