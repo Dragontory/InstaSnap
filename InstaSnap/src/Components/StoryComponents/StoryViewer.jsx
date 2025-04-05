@@ -17,6 +17,16 @@ const StoryViewer = ({stories}) => {
     const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
     const [activeIndex, setActiveIndex] = useState(0);
 
+    const handleNextStory = () => {
+        if (currentStoryIndex < stories.length - 1) {
+            setCurrentStoryIndex(currentStoryIndex + 1);
+            setActiveIndex(activeIndex + 1);
+        } else {
+            setCurrentStoryIndex(0);
+            setActiveIndex(0);
+        }
+    }
+
     return (
         <div>
             <StoryViewerContainer>
