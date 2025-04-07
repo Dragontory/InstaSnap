@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 
 const StoryViewerContainer = styled.div`
@@ -26,6 +26,10 @@ const StoryViewer = ({stories}) => {
             setActiveIndex(0);
         }
     }
+    useEffect(() => {
+        const interval = setInterval(()=> {handleNextStory()}, 2000)
+        return () => clearInterval(interval);
+    },[currentStoryIndex])
 
     return (
         <div>
