@@ -1,8 +1,11 @@
 import React from "react";
+import StoryViewer from "../../Components/StoryViewer/StoryViewer";
 
 const Story = () => {
   return (
-    <div>Story</div>
+    <div>
+      <StoryViewer  stories ={} />
+    </div>
   );
 }
 
