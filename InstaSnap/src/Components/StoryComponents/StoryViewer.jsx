@@ -21,7 +21,7 @@ const StoryViewer = ({stories}) => {
         if (currentStoryIndex < stories.length - 1) {
             setCurrentStoryIndex(currentStoryIndex + 1);
             setActiveIndex(activeIndex + 1);
-        } else {
+        } else if (currentStoryIndex === stories.length - 1) {
             setCurrentStoryIndex(0);
             setActiveIndex(0);
         }

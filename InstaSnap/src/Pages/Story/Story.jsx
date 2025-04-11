@@ -1,5 +1,5 @@
 import React from "react";
-import StoryViewer from "../../Components/StoryViewer/StoryViewer";
+import StoryViewer from "../../Components/StoryComponents/StoryViewer";
 
 const Story = () => {
 
