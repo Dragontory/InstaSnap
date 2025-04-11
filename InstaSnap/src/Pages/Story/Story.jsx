@@ -19,7 +19,7 @@ const Story = () => {
   ]
   return (
     <div>
-      <StoryViewer  stories ={} />
+      <StoryViewer  stories = {story} />
     </div>
   );
 }
