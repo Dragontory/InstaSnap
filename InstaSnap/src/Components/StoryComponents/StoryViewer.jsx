@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styled from "styled-components";
+import ProgressBar from "./ProgressBar";
 
 const StoryViewerContainer = styled.div`
     display: flex;
@@ -35,6 +36,9 @@ const StoryViewer = ({stories}) => {
         <div>
             <StoryViewerContainer>
                 <StoryImage src={stories?.[currentStoryIndex].image}/>
+                <div>
+                    {stories.map(() => <ProgressBar />)}
+                </div>
             </StoryViewerContainer>
         </div>
     )
