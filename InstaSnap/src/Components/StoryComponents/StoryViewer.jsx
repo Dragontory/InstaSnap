@@ -37,7 +37,7 @@ const StoryViewer = ({stories}) => {
             <StoryViewerContainer>
                 <StoryImage src={stories?.[currentStoryIndex].image}/>
                 <div>
-                    {stories.map(() => <ProgressBar />)}
+                    {stories.map((item, index) => <ProgressBar key={index} duration={2000} index={index} activeIndex={activeIndex}/>)}
                 </div>
             </StoryViewerContainer>
         </div>
