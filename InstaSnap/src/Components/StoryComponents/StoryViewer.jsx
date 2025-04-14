@@ -33,10 +33,10 @@ const StoryViewer = ({stories}) => {
     },[currentStoryIndex])
 
     return (
-        <div>
+        <div className="relative w-full">
             <StoryViewerContainer>
                 <StoryImage src={stories?.[currentStoryIndex].image}/>
-                <div>
+                <div className="absolute top-0 flex w-full">
                     {stories.map((item, index) => <Progressbar key={index} duration={2000} index={index} activeIndex={activeIndex}/>)}
                 </div>
             </StoryViewerContainer>
