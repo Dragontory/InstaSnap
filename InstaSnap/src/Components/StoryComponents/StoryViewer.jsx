@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styled from "styled-components";
-import ProgressBar from "./ProgressBar";
+import Progressbar from "./Progressbar";
 
 const StoryViewerContainer = styled.div`
     display: flex;
@@ -37,7 +37,7 @@ const StoryViewer = ({stories}) => {
             <StoryViewerContainer>
                 <StoryImage src={stories?.[currentStoryIndex].image}/>
                 <div>
-                    {stories.map((item, index) => <ProgressBar key={index} duration={2000} index={index} activeIndex={activeIndex}/>)}
+                    {stories.map((item, index) => <Progressbar key={index} duration={2000} index={index} activeIndex={activeIndex}/>)}
                 </div>
             </StoryViewerContainer>
         </div>
