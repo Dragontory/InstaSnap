@@ -5,7 +5,7 @@ const StoryCircle = ({ story }) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/story/");
+    navigate("/story");
   }
 
   return (
