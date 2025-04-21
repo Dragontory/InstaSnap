@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import {IoReorderThreeOutline} from "react-icons/io5";
 import { mainu } from "./SidebarConfig";
 import { useNavigate } from "react-router-dom";
 import CreatePostModal from "../Post/CreatePostModal";
 import { useDisclosure } from "@chakra-ui/react";
+import SearchComponent from "../Search/SearchComponent";
 
 const Sidebar = () => {
 
-const [activeTab, setActiveTab] = React.useState();
+const [activeTab, setActiveTab] = useState();
 const navigate = useNavigate();
 const {isOpen, onClose, onOpen} = useDisclosure();
+const [isSearchVisible, setIsSearchVisible] = useState(false);
 
     const handleTabClick = (title) => {
         setActiveTab(title);
@@ -19,6 +21,11 @@ const {isOpen, onClose, onOpen} = useDisclosure();
             navigate("/");
         } else if(title==="Create") {
             onOpen();
+        }
+        if(title === "Search") {
+            setIsSearchVisible(true);
+        } else {
+            setIsSearchVisible(false);
         }
     }
 
@@ -45,6 +52,7 @@ const {isOpen, onClose, onOpen} = useDisclosure();
             </div>
 
             <CreatePostModal onClose={onClose} isOpen={isOpen} />
+            {isSearchVisible && <SearchComponent />}
         </div>
     )
 }
