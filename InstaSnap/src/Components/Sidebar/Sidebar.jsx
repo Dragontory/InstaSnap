@@ -4,7 +4,7 @@ import { mainu } from "./SidebarConfig";
 import { useNavigate } from "react-router-dom";
 import CreatePostModal from "../Post/CreatePostModal";
 import { useDisclosure } from "@chakra-ui/react";
-import SearchComponent from "../Search/SearchComponent";
+import SearchComponents from "../SearchComponents/SearchComponents";
 
 const Sidebar = () => {
 
@@ -52,7 +52,7 @@ const [isSearchVisible, setIsSearchVisible] = useState(false);
             </div>
 
             <CreatePostModal onClose={onClose} isOpen={isOpen} />
-            {isSearchVisible && <SearchComponent />}
+            {isSearchVisible && <SearchComponents />}
         </div>
     )
 }
