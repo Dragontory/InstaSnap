@@ -30,7 +30,7 @@ const [isSearchVisible, setIsSearchVisible] = useState(false);
     }
 
     return (
-        <div className="sticky top-0 h-[100vh]">
+        <div className="sticky top-0 h-[100vh] flex">
             <div className="flex flex-col justify-between h-full px-10">
                 <div>
                     <div className="pt-10">

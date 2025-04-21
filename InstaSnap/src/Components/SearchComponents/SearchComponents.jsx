@@ -3,7 +3,7 @@ import "./SearchComponents.css";
 
 const SearchComponents = () => {
     return (
-        <div>
+        <div className="searchContainer">
             <div>
                 <h1>Search</h1>
                 <input className="searchInput" type="text" placeholder="Search..." />
