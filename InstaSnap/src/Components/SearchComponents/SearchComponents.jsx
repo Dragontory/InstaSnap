@@ -8,6 +8,12 @@ const SearchComponents = () => {
                 <h1 className="text-xl pb-5">Search</h1>
                 <input className="searchInput" type="text" placeholder="Search..." />
             </div>
+
+            <hr />
+
+            <div>
+                
+            </div>
         </div>
     )
 }
