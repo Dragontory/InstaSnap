@@ -2,8 +2,8 @@ import React from "react";
 
 const SearchUserCard = ({ user }) => {
     return (
-        <div>
-            <div>
+        <div className="py-2 cursor-pointer">
+            <div className="flex items-center">
                 <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2025/04/21/17/33/goose-9548203_1280.jpg" alt="" />
 
                 <div className="ml-3">

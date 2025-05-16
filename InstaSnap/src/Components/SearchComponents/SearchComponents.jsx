@@ -12,7 +12,7 @@ const SearchComponents = () => {
 
             <hr />
 
-            <div>
+            <div className="px-3 pt-5">
                 {[1,1,1,1,1,1,1,1].map((item)=><SearchUserCard />)}.
             </div>
         </div>
