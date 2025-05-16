@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchComponents.css";
+import SearchUserCard from "./SearchUserCard";
 
 const SearchComponents = () => {
     return (
@@ -12,7 +13,7 @@ const SearchComponents = () => {
             <hr />
 
             <div>
-                
+                {[1,1,1,1,1,1,1,1].map((item)=><SearchUserCard />)}.
             </div>
         </div>
     )
